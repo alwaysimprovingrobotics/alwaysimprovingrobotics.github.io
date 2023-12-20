@@ -19,7 +19,7 @@ table, td {
 	border-collapse: collapse;
 }
 
-a.menu:link, a.menu:visited {color: #c0c0f0;text-decoration: none;padding:0 12px;}
+a.menu:link, a.menu:visited {color: #c0c0f0;text-decoration: none;padding:0 8px;}
 a.menu:hover {background: #039aff;color: #fff;}
 a.email:link,a.email:visited {padding:0;color:#0000ff;}
 
