@@ -13,11 +13,6 @@ function adj_about() {
 	var w = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 	var h = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
 	if(w > h) {
-		$("header").style.height = "64px";
-		$("navi").style.left = "480px";
-		$("navi").style.top = "72px";
-		$("frame").style.top = "116px";
-
 		$("team").style.position = "absolute";
 		$("team").style.top = "16px";
 		$("team").style.bottom = "16px";
@@ -31,11 +26,6 @@ function adj_about() {
 		$("members").style.right = "16px";
 	}
 	else {
-		$("header").style.height = "90px";
-		$("navi").style.left = "16px";
-		$("navi").style.top = "110px";
-		$("frame").style.top = "142px";
-
 		$("team").style.position = "relative";
 		$("members").style.position = "relative";
 		$("members").style.marginTop = "16px";
