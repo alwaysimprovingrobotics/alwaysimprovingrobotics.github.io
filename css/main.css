@@ -19,7 +19,7 @@ table, td {
 	border-collapse: collapse;
 }
 
-a.menu:link, a.menu:visited {color: #c0c0f0;text-decoration: none;padding:0 16px;}
+a.menu:link, a.menu:visited {color: #c0c0f0;text-decoration: none;padding:0 12px;}
 a.menu:hover {background: #039aff;color: #fff;}
 a.email:link,a.email:visited {padding:0;color:#0000ff;}
 
@@ -36,7 +36,6 @@ a.email:link,a.email:visited {padding:0;color:#0000ff;}
 #navi {
 	position:fixed;
 	color:#039aff;
-	font-size:18px;
 	font-weight: bold;
 }
 
@@ -70,8 +69,6 @@ a.email:link,a.email:visited {padding:0;color:#0000ff;}
 	text-shadow:2px 2px 4px rgba(0,0,0,0.5);
 	padding: 16px 0;
 }
-
-.title2 {font-family: sans-serif; font-weight: bold;font-size: 24px;color:#fff;padding: 16px;text-shadow:2px 2px 5px rgba(0,0,0,0.5);}
 
 p {
 	padding: 4px 0;
