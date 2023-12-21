@@ -5,6 +5,7 @@ html, body {
 body {
 	font-family: Helvetica,arial,sans-serif;
 	font-size: 16px;
+	line-height: 18px;
 	margin: 0;
 	padding: 0;
 	color: #666;
@@ -19,9 +20,11 @@ table, td {
 	border-collapse: collapse;
 }
 
-a.menu:link, a.menu:visited {color: #c0c0f0;text-decoration: none;padding:0 8px;}
-a.menu:hover {background: #039aff;color: #fff;}
-a.email:link,a.email:visited {padding:0;color:#0000ff;}
+.menu {background: #ccf;color:#000;}
+.menu2 {background: #000;}
+.menu2 a:link, .menu2 a:visited {color:#c0c0f0;text-decoration: none;}
+.menu2 a:hover {background: #039aff;color:#fff;}
+.email a.link, .email a:visited {padding:0;color:#0000ff;}
 
 #header {
 	position: fixed;
@@ -54,11 +57,15 @@ a.email:link,a.email:visited {padding:0;color:#0000ff;}
 					  repeating-linear-gradient(135deg, rgba(90,188,255,0.45), rgba(90,188,255,0.45) 14px, transparent 14px, transparent 20px);
 }
 
-.box {
+.box, .box1 {
 	background-color: #fff;
 	border: solid #c0c0c0 1px;
 	overflow: auto;
 	padding: 16px;
+}
+
+.box1 {
+	padding: 12px;
 }
 
 .title {
@@ -87,6 +94,19 @@ p {
 	height: 128px;
 	background: #333;
 	border-radius: 64px;
+}
+
+.thumbnail {
+	display: inline-block;
+	width: 112px;
+	height: 112px;
+	border: solid #fff 4px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+	margin: 0 12px 12px 0;
+}
+
+.info {
+	border: solid #35bbfc 4px;
 }
 
 .swiper-slide {background-size: cover;background-position: center;width: 100%;height: 100%;}
