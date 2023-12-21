@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<title>Always Improving</title>
 	<script src="js/main.js"></script>
-	<script src="js/adj_about.js"></script>
 </head>
 <body>
 	<div id="header"></div>
@@ -103,7 +102,35 @@
 	</div>
 
 	<script lang="javascript">
-		print_header(1);
+		function $(id) {
+			return document.getElementById(id);
+		}
+
+		function adj_layout() {
+			var w = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+			var h = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+			if(w > h) {
+				$("team").style.position = "absolute";
+				$("team").style.top = "16px";
+				$("team").style.bottom = "16px";
+				$("team").style.left = "16px";
+				$("team").style.right = "calc(50% + 8px)";
+
+				$("members").style.position = "absolute";
+				$("members").style.top = "16px";
+				$("members").style.bottom = "16px";
+				$("members").style.left = "calc(50% + 8px)";
+				$("members").style.right = "16px";
+			}
+			else {
+				$("team").style.position = "relative";
+				$("members").style.position = "relative";
+				$("members").style.marginTop = "16px";
+			}
+		}
+
+		print_header("about");
+		adj_layout();
 	</script>
 </body>
 </html>
