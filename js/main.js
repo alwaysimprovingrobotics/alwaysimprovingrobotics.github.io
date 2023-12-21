@@ -10,8 +10,9 @@ function print_header(n) {
 		$("header").innerHTML = '<img src="img/logo.png" width=384 height=64>';
 	
 		$("navi").style.left = '480px';
-		$("navi").style.top = '72px';
+		$("navi").style.top = '80px';
 		$("navi").style.fontSize = '16px';
+		$("navi").style.lineHeight = '16px';
 
 		$("frame").style.top = '116px';
 	}
@@ -19,23 +20,29 @@ function print_header(n) {
 		$("header").style.height = '90px';
 		$("header").innerHTML = '<img src="img/logo.png" width=316 height=53>';
 
-		$("navi").style.left = '16px';
+		$("navi").style.left = '24px';
+		$("navi").style.lineHeight = '18px';
 		$("navi").style.top = '96px';
-		$("navi").style.fontSize = '16px';
+		$("navi").style.fontSize = '12px';
 
 		$("frame").style.top = '142px';
 	}
 
+	var items = [
+		['about',		'About Us',		'index'], 
+		['awards',		'Awards',		'awards'], 
+		['accomp',		'Accomplished',	'accomp'], 
+		['hobbycard',	'Hobby Cards',	'hobbycards'], 
+		['innovation',	'Innovation',	'innovation']
+	];
 
 	var str = "";
-	str += '<a class="menu" href="' + (n == 1? '#' : 'index.html') + '">About Us</a> |';
-	str += '<a class="menu" href="' + (n == 2? '#' : 'awards.html') + '">Awards</a> |';
-	str += '<a class="menu" href="' + (n == 3? '#' : 'accomp.html') + '">Accomplished</a> |';
-	if(w < h) {
-		str += '<br>';
+	for(var i=0; i<items.length; i++) {
+		if(n == items[i][0])
+			str += '<span class="menu">&nbsp;' + items[i][1] + '&nbsp;</span> | ';
+		else
+			str += '<span class="menu2"><a href="' + items[i][2] + '.html">&nbsp;' + items[i][1] + '&nbsp;</a></span> | ';
 	}
-	str += '<a class="menu" href="' + (n == 4? '#' : 'hobby.html') + '">Hobby Card</a> |';
-	str += '<a class="menu" href="' + (n == 5? '#' : 'innovation.html') + '">Innovation</a>';
 
 	$("navi").innerHTML = str;
 }
