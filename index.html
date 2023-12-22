@@ -16,7 +16,7 @@
 	<div id="frame">
 		<div id="team" class="box">
 			<div class="title">About Our Team!</div>
-			<p>We are a First Lego League robotic team of seven youth ranging from ten to twelve year olds. This is our second year participating in First Lego League Challenge.</p>
+			<p>We are team A.I. - Always Improving. We are a First Lego League robotic team of seven youth ranging from ten to twelve year olds. This is our second year participating in First Lego League Challenge.</p>
 			<br>
 			<div style="text-align: center;">
 				<img src="img/logo2.png" width="256" height="256">
@@ -25,7 +25,7 @@
 		</div>
 
 		<div id="members" class="box">
-			<div class="title">AI Members</div>
+			<div class="title">A.I. Members</div>
 			<table class="intro" cols="3">
 				<tr>
 					<td width="140">
@@ -109,7 +109,12 @@
 		function adj_layout() {
 			var w = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 			var h = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
-			if(w > h) {
+			if(portrait()) {
+				$("team").style.position = "relative";
+				$("members").style.position = "relative";
+				$("members").style.marginTop = "16px";
+			}
+			else {
 				$("team").style.position = "absolute";
 				$("team").style.top = "16px";
 				$("team").style.bottom = "16px";
@@ -121,11 +126,6 @@
 				$("members").style.bottom = "16px";
 				$("members").style.left = "calc(50% + 8px)";
 				$("members").style.right = "16px";
-			}
-			else {
-				$("team").style.position = "relative";
-				$("members").style.position = "relative";
-				$("members").style.marginTop = "16px";
 			}
 		}
 
