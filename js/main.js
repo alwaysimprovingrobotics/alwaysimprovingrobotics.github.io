@@ -47,3 +47,8 @@ function print_header(n) {
 	$("navi").innerHTML = str;
 }
 
+function portrait() {
+	var w = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+	var h = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+	return h > w;
+}
