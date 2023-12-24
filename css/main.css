@@ -2,6 +2,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	font-family: Helvetica,arial,sans-serif;
 	font-size: 16px;
@@ -20,12 +21,6 @@ table, td {
 	border-collapse: collapse;
 }
 
-.menu {background: #ccf;color:#000;}
-.menu2 {background: #000;}
-.menu2 a:link, .menu2 a:visited {color:#c0c0f0;text-decoration: none;}
-.menu2 a:hover {background: #039aff;color:#fff;}
-.email a.link, .email a:visited {padding:0;color:#0000ff;}
-
 #header {
 	position: fixed;
 	top: 16px;
@@ -38,8 +33,31 @@ table, td {
 
 #navi {
 	position:fixed;
-	color:#039aff;
+}
+
+#navi .menu_selected {
+	background: #ccf;
+	color:#000;
 	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#navi .menu {
+	background: #000;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#navi .menu a:link, #navi .menu a:visited {
+	color:#c0c0f0;
+	text-decoration: none;
+}
+
+#navi .menu a:hover {
+	background: #039aff;
+	color:#fff;
 }
 
 #frame {
@@ -49,7 +67,7 @@ table, td {
 	bottom: 16px;
 	left: 16px;
 	right: 16px;
-	padding: 16px;
+	padding: 12px;
 	border-radius: 10px;
 	border: solid #fff 10px;
 	background-color: #f0f0f0;
@@ -57,103 +75,38 @@ table, td {
 					  repeating-linear-gradient(135deg, rgba(90,188,255,0.45), rgba(90,188,255,0.45) 14px, transparent 14px, transparent 20px);
 }
 
-.box, .box1 {
+.box {
 	background-color: #fff;
 	border: solid #c0c0c0 1px;
 	overflow: auto;
-	padding: 16px;
-}
-
-.box1 {
-	padding: 12px 8px 12px 8px;
+	padding: 14px;
+	border-radius: 6px;
 }
 
 .title {
 	font-family: sans-serif;
 	font-weight: bold;
 	font-size: 28px;
-	color:#108bde;
-	text-shadow:2px 2px 4px rgba(0,0,0,0.5);
-	padding: 16px 0;
+	line-height: 28px;
+	color:#fff;
+	text-shadow:2px 2px 6px rgba(0,0,0,0.5);
+	background: #039aff;
+	padding: 16px 8px;
+	border-radius: 6px;
+	margin-bottom: 12px;
+}
+
+.title2 {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 24px;
+	color: #039aff;
+	margin: 8px;
 }
 
 p {
-	padding: 4px 0;
-}
-
-.intro tr {
-	border-top: dashed #35bbfc 1px;
-}
-
-.intro td {
-	padding: 16px 4px;
-}
-
-.pic_bg {
-	width: 128px;
-	height: 128px;
-	background: #333;
-	border-radius: 64px;
-}
-
-.thumbnail {
-	display: inline-block;
-	width: 120px;
-	height: 120px;
-	border: solid #fff 4px;
-	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-	margin: 0 0px 12px 0;
-}
-
-#info {
-	position: fixed;
-	z-index: 9999;
-	border: solid #35bbfc 6px;
-	border-radius: 5px;
-	top: 4px;
-	bottom: 4px;
-	background: #fff;
-	display: none;
-	padding: 0;
-}
-#info_title {
-	position: absolute;
-	background: #35bbfc;
-	color: #fff;
-	left: 0;
-	right: 0;
-	height: 24px;
-	line-height: 20px;
-	font-size: 18px;
-	font-weight: bold;
-	text-align: center;
-	text-shadow: 2px 2px 4px #000;
-}
-#info_close {
-	position: absolute;
-	top: 1px;
-	right: 3px;
-	width: 24px;
-	font-size: 14px;
-	line-height: 18px;
-	background: #A82020;
-	color: #fff;
-	text-align: center;
-	cursor: pointer;
-}
-#info_content {
-	position: absolute;
-	top: 24px;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	overflow: auto;
-	padding:8px;
-}
-#info_content img {
-	box-shadow: 4px 4px 8px #888;
-	margin: 8px 16px 16px 8px;
-	float: left;
+	padding: 4px;
 }
 
 button {
@@ -168,24 +121,10 @@ button {
 	text-shadow: -1px -1px -2px #000;
 	cursor: pointer;
 }
+
 hr {
 	height: 1px;
-	background-color: #35bbfc;
+	background-color: #039aff;
 	border: none;
+	margin-bottom: 16px;
 }
-
-li {
-	display: inline-block;
-	font-weight: bold;
-	width: 100px;
-	margin: 0;
-	padding: 0;
-}
-
-.swiper-slide {background-size: cover;background-position: center;width: 100%;height: 100%;}
-.slide_page {position: absolute;background: #fff;border-radius: 15px 15px 5px 5px;box-shadow: 2px 2px 5px rgba(0,0,0,0.5);margin: "+cfg.margin+"px;width: "+cfg.width+"px;height: "+cfg.height+"px;}
-.slide_title {text-align: center;letter-spacing: 6px;text-shadow: 2px 2px 5px rgba(0,0,0,0.75);color: #ffffff;font-size: " + cfg.titleFontSize + "px;line-height: " + cfg.titleHeight + "px;}
-.slide_content {width: 100%;height: auto;background: #fff;position: absolute;top: " + cfg.titleHeight + "px;bottom: " + cfg.footerHeight + "px;}
-.slide_footer {width: 100%;text-align: center;position: absolute;bottom: 40px;}
-.slide_content_left, .slide_content_right {width: 50%;position: absolute;padding: 0.5em 0 0 1em;}
-.slide_content_right {right: -0.5em;}
