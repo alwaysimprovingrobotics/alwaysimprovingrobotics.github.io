@@ -7,6 +7,41 @@
 	<link rel="shortcut icon" href="img/icon57.png">
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<title>Always Improving</title>
+	<style>
+        .intro_box {
+            border-top: dashed 1px #039aff;
+            margin-bottom: 12px;
+        }
+
+        .intro_left, .intro_right {
+            max-width: 500px;
+            min-height: 128px;
+            padding: 8px;
+        }
+
+        .intro_right {
+            margin: 0 0 0 auto;
+        }
+
+        .intro_box img {
+            width: 128px;
+            height: 128px;
+            border-radius: 64px;
+            margin-right: 16px;
+            background: #333;
+            float: left;
+			box-shadow: 2px 2px 5px #888;
+        }
+
+        .intro_right img {
+            float: right;
+        }
+
+		#team a.link, #team a:visited {
+			padding:0;
+			color:#0000ff;
+		}
+	</style>
 	<script src="js/main.js"></script>
 </head>
 <body>
@@ -16,96 +51,73 @@
 	<div id="frame">
 		<div id="team" class="box">
 			<div class="title">About Our Team!</div>
-			<p>We are team A.I. - Always Improving. We are a First Lego League robotic team of seven youth ranging from ten to twelve year olds. This is our second year participating in First Lego League Challenge.</p>
-			<br>
-			<div style="text-align: center;">
-				<img src="img/logo2.png" width="256" height="256">
-				<p>Contact us:<br><a class="email" href="mailto:always-improving@outlook.com">always-improving@outlook.com</a></p>
+			We are team A.I. - Always Improving. We are a First Lego League robotic team of seven youth ranging from ten to twelve year olds. This is our second year participating in First Lego League Challenge.
+			<div style="text-align: center;margin-top: 20px;">
+				<img src="img/logo2.png" width="256" height="256" style="background: #000;border-radius: 24px;box-shadow: 2px 2px 6px #888;margin-bottom: 16px;">
+				<div style="font-weight: bold;margin: 24px 0 6px 0;">Contact us:</div>
+				<div style="font-size: 15px;">
+					<img src="img/email.png" width="32" height="32" style="vertical-align:middle;margin-right: 4px;"><a href="mailto:always-improving@outlook.com">Always-Improving@outlook.com</a>
+					<br>
+					<img src="img/feedback.png" width="32" height="32" style="vertical-align:middle;margin-right: 4px;"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdM1rPudouVTwDNSsvn86gieVgQWFQTyBEHrG9w53LduhdD7A/viewform?embedded=true">Feedback</a>
+				</div>
 			</div>
 		</div>
 
 		<div id="members" class="box">
 			<div class="title">A.I. Members</div>
-			<table class="intro" cols="3">
-				<tr>
-					<td width="140">
-						<div class="pic_bg">
-							<img src="img/robot_alvin.png" width="128" height="128">
-						</div>
-					</td>
-					<td colspan="2">
-						Hi, my name is <b>Alvin</b>. I have 2 years of experience in FLL. I like to eat dumplings and noodles, and I like to practice the piano and clarinet and play video games. I want to be a musician when I grow up.
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						My name is <b>Chloe</b>, and I'm in seventh grade. This is my first year competing in FLL. I like to design things such as the team website, team t-shirt, team logo, banner and posters. I like to dance, snowboard, play volleyball, graphic design, and code.
-					</td>
-					<td width="140">
-						<div class="pic_bg">
-							<img src="img/robot_chloe.png" width="128" height="128">
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="140">
-						<div class="pic_bg">
-							<img src="img/robot_ivan.png" width="128" height="128">
-						</div>
-					</td>
-					<td colspan="2">
-						Hello, my name is <b>Ivan</b>. I have 2 years of experience in FLL. I like to play basketball, chess, and play video games, and I want to be an engineer when I grow up.
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						Hi, my name is <b>Katya</b>, and I'm in fifth grade. This is my first year competing in FLL. I like to play lacrosse, play soccer, swim, and play tennis.
-					</td>
-					<td width="140">
-						<div class="pic_bg">
-							<img src="img/robot_katya.png" width="128" height="128">
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="140">
-						<div class="pic_bg">
-							<img src="img/robot_kevinf.png" width="128" height="128">
-						</div>
-					</td>
-					<td colspan="2">
-						Hello, my name is <b>Kevin F</b>. I have 1 year of experience in FLL. I like to play basketball, tennis, chess, video games, etc. I want to be a mechanical engineer when I grow up.
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-						Hi, I'm <b>Kevin J</b>. This is my second year competing in FLLC. I like to eat noodles.
-					</td>
-					<td width="140">
-						<div class="pic_bg">
-							<img src="img/robot_kevinj.png" width="128" height="128">
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="140">
-						<div class="pic_bg">
-							<img src="img/robot_mason.png" width="128" height="128">
-						</div>
-					</td>
-					<td colspan="2">
-						Hi, my name is <b>Mason</b> and I am in 6th grade. I have about 1.5 years of experience in FLL. I like to eat ramen and I want to be a NASA engineer when I grow up.
-					</td>
-				</tr>
-			</table>
+
+			<div class="intro_box" style="border: none;">
+				<div class="intro_left">
+					<img src="img/robot_alvin.png">
+					Hi, my name is <b>Alvin</b>. I have 2 years of experience in FLL. I like to eat dumplings and noodles, and I like to practice the piano and clarinet and play video games. I want to be a musician when I grow up.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_right">
+					<img src="img/robot_chloe.png">
+					My name is <b>Chloe</b>, and I'm in seventh grade. This is my first year competing in FLL. I like to design things such as the team website, team t-shirt, team logo, banner and posters. I like to dance, snowboard, play volleyball, graphic design, and code.
+				</div>
+			</div>
+			
+			<div class="intro_box">
+				<div class="intro_left">
+					<img src="img/robot_ivan.png">
+					Hello, my name is <b>Ivan</b>. I have 2 years of experience in FLL. I like to play basketball, chess, and play video games, and I want to be an engineer when I grow up.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_right">
+					<img src="img/robot_katya.png">
+					Hi, my name is <b>Katya</b>, and I'm in fifth grade. This is my first year competing in FLL. I like to play lacrosse, play soccer, swim, and play tennis.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_left">
+					<img src="img/robot_kevinf.png">
+					Hello, my name is <b>Kevin F</b>. I have 1 year of experience in FLL. I like to play basketball, tennis, chess, video games, etc. I want to be a mechanical engineer when I grow up.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_right">
+					<img src="img/robot_kevinj.png">
+					Hi, I'm <b>Kevin J</b>. This is my second year competing in FLLC. I like to eat noodles.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_left">
+					<img src="img/robot_mason.png">
+					Hi, my name is <b>Mason</b> and I am in 6th grade. I have about 1.5 years of experience in FLL. I like to eat ramen and I want to be a NASA engineer when I grow up.
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<script lang="javascript">
-		function $(id) {
-			return document.getElementById(id);
-		}
-
 		function adj_layout() {
 			var w = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
 			var h = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
