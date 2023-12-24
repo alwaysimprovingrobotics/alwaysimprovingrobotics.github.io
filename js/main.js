@@ -39,9 +39,9 @@ function print_header(n) {
 	var str = "";
 	for(var i=0; i<items.length; i++) {
 		if(n == items[i][0])
-			str += '<span class="menu">&nbsp;' + items[i][1] + '&nbsp;</span> | ';
+			str += '<span class="menu_selected"> ' + items[i][1] + ' </span> | ';
 		else
-			str += '<span class="menu2"><a href="' + items[i][2] + '.html">&nbsp;' + items[i][1] + '&nbsp;</a></span> | ';
+			str += '<span class="menu"><a href="' + items[i][2] + '.html"> ' + items[i][1] + ' </a></span> | ';
 	}
 
 	$("navi").innerHTML = str;
