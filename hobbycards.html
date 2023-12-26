@@ -130,19 +130,21 @@
 						size = 120;
 
 					var x, y;
-					if(hobby_cards_db[i][2].length >= 3)
-						x = hobby_cards_db[i][2][2];
-					else if(w <= h)
+					if(w <= h)
 						x = 0;
 					else
 						x = parseInt((w / h * 120 - 120) / 2);
 
-					if(hobby_cards_db[i][2].length >= 4)
-						y = hobby_cards_db[i][2][3];
-					else if(w >= h)
+					if(hobby_cards_db[i][2].length >= 3)
+						x += hobby_cards_db[i][2][2];
+
+					if(w >= h)
 						y = 0;
 					else
 						y = parseInt((h / w * 120 - 120) / 2);
+
+					if(hobby_cards_db[i][2].length >= 4)
+						y += hobby_cards_db[i][2][3];
 
 					str += '<div class="thumbnail" style="margin-right:' + (isPortrait? 4 : 12) + 'px;">';
 					str += '<div style="width:120px;height:120px;background:url(\'hobbycards/' + hobby_cards_db[i][1] + '\') no-repeat -' +

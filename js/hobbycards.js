@@ -3,7 +3,7 @@ var hobby_cards_db = [
 	[
 		"Mona Lisa",
 		"MonaLisa.jpg",
-		[640, 955, 0, 5],
+		[640, 955, 0, -20],
 		"<h5>Artist</h5>Leonardo da Vinci",
 		"<h5>Year</h5>c. 1503-1506, perhaps continuing until c. 1517",
 		"<h5>Medium</h5>Oil on poplar panel",
@@ -54,7 +54,7 @@ var hobby_cards_db = [
 	[
 		"Girl with a Pearl Earring",
 		"GirlwithaPearlEarring.jpg",
-		[640, 851, 0, 10],
+		[640, 851, 0, -10],
 		"<h5>Artist</h5>Johannes Vermeer",
 		"<h5>Year</h5>c. 1665",
 		"<h5>Type</h5>Tronie",
@@ -120,7 +120,7 @@ var hobby_cards_db = [
 	[
 		"Lady with an Ermine",
 		"LadywithanErmine.jpg",
-		[640, 860, 0, 5],
+		[640, 860, 0, -15],
 		"<h5>Artist</h5>Leonardo da Vinci",
 		"<h5>Year</h5>1489–1491",
 		"<h5>Medium</h5>Oil on walnut panel",
@@ -172,7 +172,7 @@ var hobby_cards_db = [
 	[
 		"Ludwig van Beethoven",
 		"Beethoven.jpg",
-		[640, 800, 0, 0],
+		[640, 800, 0, -15],
 		"Ludwig van Beethoven (baptised 17 December 1770 – 26 March 1827) was a German composer and pianist. Beethoven remains one of the most admired composers in the history of Western music; his works rank among the most performed of the classical music repertoire and span the transition from the Classical period to the Romantic era in classical music. His career has conventionally been divided into early, middle, and late periods. His early period, during which he forged his craft, is typically considered to have lasted until 1802. From 1802 to around 1812, his middle period showed an individual development from the styles of Joseph Haydn and Wolfgang Amadeus Mozart, and is sometimes characterized as heroic. During this time, he began to grow increasingly deaf. In his late period, from 1812 to 1827, he extended his innovations in musical form and expression.",
 		"Beethoven was born in Bonn. His musical talent was obvious at an early age. He was initially harshly and intensively taught by his father, Johann van Beethoven. Beethoven was later taught by the composer and conductor Christian Gottlob Neefe, under whose tutelage he published his first work, a set of keyboard variations, in 1783. He found relief from a dysfunctional home life with the family of Helene von Breuning, whose children he loved, befriended, and taught piano. At age 21, he moved to Vienna, which subsequently became his base, and studied composition with Haydn. Beethoven then gained a reputation as a virtuoso pianist, and was soon patronised by Karl Alois, Prince Lichnowsky for compositions, which resulted in his three Opus 1 piano trios (the earliest works to which he accorded an opus number) in 1795.",
 		"His first major orchestral work, the First Symphony, premiered in 1800, and his first set of string quartets was published in 1801. Despite his hearing deteriorating during this period, he continued to conduct, premiering his Third and Fifth Symphonies in 1804 and 1808, respectively. His Violin Concerto appeared in 1806. His last piano concerto (No. 5, Op. 73, known as the Emperor), dedicated to his frequent patron Archduke Rudolf of Austria, premiered in 1811, without Beethoven as soloist. He was almost completely deaf by 1814, and he then gave up performing and appearing in public. He described his problems with health and his unfulfilled personal life in two letters, his Heiligenstadt Testament (1802) to his brothers and his unsent love letter to an unknown &quot;Immortal Beloved&quot; (1812).",
@@ -182,7 +182,7 @@ var hobby_cards_db = [
 	[
 		"Frédéric Chopin",
 		"Chopin.jpg",
-		[640, 860, 0, 8],
+		[640, 860, 0, -12],
 		"Frédéric Chopin's Nocturne No. 21 in C minor, B. 108, WN 62, is a musical work for solo piano composed in 1847-1848. It was the last of Chopin's nocturnes to be published and was done so posthumously in 1938. It is famous for its striking simplicity and folk-like melody. Among the 21 nocturnes known to have been written by Chopin, this is one of the three that end in a minor key - the other two being No. 13 in C Minor and No. 9 in B Major.",
 		"Frédéric Chopin wrote 21 nocturnes for solo piano between 1827 and 1846. They are generally considered among the finest short solo works for the instrument and hold an important place in contemporary concert repertoire. Although Chopin did not invent the nocturne, he popularized and expanded on it, building on the form developed by Irish composer John Field.",
 		"By the time of Chopin's birth in 1810, John Field was already an accomplished composer. Eventually, the young Chopin became a great admirer of Field, taking some influence from the Irish composer's playing and composing technique. Chopin had composed five of his nocturnes before meeting Field for the first time.",
@@ -191,28 +191,46 @@ var hobby_cards_db = [
 		"Please refer to the https://michaelkravchuk.com/wp-content/uploads/2021/09/Chopin-Nocturne-Op.-Post.pdf for sheet music.",
 		"Source: https://en.wikipedia.org/wiki/Nocturne_in_C_minor,_Op._posth._(Chopin), https://en.wikipedia.org/wiki/Nocturnes_(Chopin)"
 	],
+	[
+		"Wolfgang Amadeus Mozart",
+		"WolfgangAmadeusMozart.jpg",
+		[640, 928, 0, -20],
+		"Wolfgang Amadeus Mozart (27 January 1756 – 5 December 1791) was a prolific and influential composer of the Classical period. Despite his short life, his rapid pace of composition resulted in more than 800 works of virtually every genre of his time. Many of these compositions are acknowledged as pinnacles of the symphonic, concertante, chamber, operatic, and choral repertoire. Mozart is widely regarded as among the greatest composers in the history of Western music, with his music admired for its &quot;melodic beauty, its formal elegance and its richness of harmony and texture&quot;",
+		"Born in Salzburg, then in the Holy Roman Empire and currently in Austria, Mozart showed prodigious ability from his earliest childhood. Already competent on keyboard and violin, he composed from the age of five and performed before European royalty. His father took him on a grand tour of Europe and then three trips to Italy. At 17, he was a musician at the Salzburg court but grew restless and travelled in search of a better position.",
+		"Mozart's music, like Haydn's, stands as an archetype of the Classical style. At the time he began composing, European music was dominated by the style galant, a reaction against the highly evolved intricacy of the Baroque. Progressively, and in large part at the hands of Mozart himself, the contrapuntal complexities of the late Baroque emerged once more, moderated and disciplined by new forms, and adapted to a new aesthetic and social milieu. Mozart was a versatile composer, and wrote in every major genre, including symphony, opera, the solo concerto, chamber music including string quartet and string quintet, and the piano sonata. These forms were not new, but Mozart advanced their technical sophistication and emotional reach. He almost single-handedly developed and popularized the Classical piano concerto. He wrote a great deal of religious music, including large-scale masses, as well as dances, divertimenti, serenades, and other forms of light entertainment.",
+		"The central traits of the Classical style are all present in Mozart's music. Clarity, balance, and transparency are the hallmarks of his work, but simplistic notions of its delicacy mask the exceptional power of his finest masterpieces, such as the Piano Concerto No. 24 in C minor, K. 491; the Symphony No. 40 in G minor, K. 550; and the opera Don Giovanni.",
+		"Source: https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+	],
 	["@Craft"],
 	[
 		"Make Pan Flute by Straws",
 		"MakePanFlutebyStraws.jpg",
-		[320, 477],
+		[640, 785],
 		"<b>What you need</b>",
 		"Straws - Your choice how many. We used six straw to get eight tubes because we used cut ends for some of the short ones.",
 		"Tape - Your choice here too. Clear tape will do the job, but pretty tape will make it even more fun!",
 		"<b>What you do</b>",
 		"1. Cut the straws in all different sizes. It works best to plan out the order you want them if you're using different colored straws and then start cutting from longest to shortest. Use cut ends if you can for some of the shorter ones.",
+		"<h5>C</h5>17.5 cm",
+		"<h5>D</h5>15.5 cm",
+		"<h5>E</h5>13.5 cm",
+		"<h5>F</h5>12.5 cm",
+		"<h5>G</h5>11 cm",
+		"<h5>A</h5>10 cm",
+		"<h5>B</h5>9 cm",
+		"<h5>C</h5>8 cm",
 		"2.	Lay a piece of tape down with the sticky side facing up. Begin placing the straws along it starting with the shortest straw so you make sure you have enough of it above and below the tape. Then line the rest up in order of length, being sure to keep the top edge as straight as possible.",
 		"3.	Once the straws are placed, wrap the ends of the tape up and around the other side of the straws until the ends meet. Wrap it around a second time for extra strength, but this time in the opposite direction.",
 		"4.	Have fun playing your pan flute! You can blow across the opening or down into the straws, but don't put your mouth on the straws or it won't work! Notice how each straw has a different pitch based on its length.",
 		"<b>Let’s try</b>",
-		"<img src='hobbycards/Ode-to-Joy.png' style='width:128px;height:128px;'>",
+		"<img src='hobbycards/Ode-to-Joy.png' style='width:320;height:453;'>",
 		"",
 		"Source: https://lexington.macaronikid.com/articles/599e060ab2225771d7151637/make-your-own-pan-flute-with-straws, https://pianocoda.com/beethoven/ode-to-joy/"
 	],
 	[
-		"Use Recycled Cans to Build Drums",
+		"Build Drums by Recycled Cans",
 		"UseRecycledCanstoBuildDrums.jpg",
-		[320, 477],
+		[640, 604],
 		"<b>Note: NOTE: Please never leave young children unattended with this tin can music craft. Some people are concerned about the dangers of balloons, others about the sharpness of the inside of the tin and others again, about the thing we added to make the tins SHAKE SHAKE SHAKE. So. Please take care!</b>",
 		"<b>Tin Can Drums Materials</b>",
 		"&#10003; a can per drum<br>&#10003; a balloon per drum<br>&#10003; elastic band<br>&#10003; something to make a shaker sound – e.g. rice, chickpeas, little stones<br>&#10003; scissors & drum sticks of sorts (we used chop sticks)",
@@ -226,7 +244,7 @@ var hobby_cards_db = [
 	[
 		"Rubber Band Box Guitar",
 		"RubberBandBoxGuitar.jpg",
-		[320, 477],
+		[640, 285, -70],
 		"<b>Materials</b>",
 		"&#10003; Four rubber bands of varying thickness but the same length<br>&#10003; Glue<br>&#10003; Packing tape (or other strong tape)<br>&#10003; Empty tissue box<br>&#10003; Scissors<br>&#10003; Two large craft sticks<br>&#10003; Empty paper towel tube",
 		"<b>Preparation</b>",
@@ -240,9 +258,9 @@ var hobby_cards_db = [
 		"Source: https://www.scientificamerican.com/article/tune-up-your-rubber-band-guitar/"
 	],
 	[
-		"Make your own chess board and pieces & learn how to play chess",
+		"Make Your Own Chess Set",
 		"Chess.jpg",
-		[320, 477],
+		[640, 638],
 		"20th July marks the date in 1924 when the International Chess Federation was established in Paris. World Chess Day (or International Chess Day) is now celebrated worldwide on this day.",
 		"The easiest way to create your own paper chess set is to print off a printable template. There are plenty available across the Internet, including this fabulous one from the teacher and parent learning resource website Twinkl.",
 		"You’ll just need to print off the patterns, carefully cut out each of them and then either Sellotape or glue them into shape.",
@@ -252,9 +270,9 @@ var hobby_cards_db = [
 		"Source: https://navigator-business-optimizer.com/2021/07/fun-with-paper-make-your-very-own-chess-game-and-celebrate-the-world-chess-day/"
 	],
 	[
-		"How to Draw a Comic Character",
+		"Draw a Comic Character",
 		"ComicCharacter.jpg",
-		[320, 477],
+		[640, 290],
 		"1.	Sketch a circle for the head.",
 		"2.	Then, draw an oblong attached to it.",
 		"3.	Sketch a vertical oblong for the body.",
@@ -271,7 +289,7 @@ var hobby_cards_db = [
 	[
 		"Bottle Cap Art",
 		"BottleCapArt.jpg",
-		[320, 477],
+		[640, 409, -29],
 		"Save all those plastic milk caps, bottle caps, and lids to make fun crafts",
 		"Source: https://www.craftymorning.com/plastic-bottle-cap-lid-crafts-for-kids/"
 	],
@@ -279,7 +297,7 @@ var hobby_cards_db = [
 	[
 		"Black hole",
 		"Blackhole.jpg",
-		[320, 477],
+		[640, 515],
 		"A black hole is a region of spacetime where gravity is so strong that nothing, including light and other electromagnetic waves, has enough energy to escape it. The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole. The boundary of no escape is called the event horizon. Although it has a great effect on the fate and circumstances of an object crossing it, it has no locally detectable features according to general relativity. In many ways, a black hole acts like an ideal black body, as it reflects no light. Moreover, quantum field theory in curved spacetime predicts that event horizons emit Hawking radiation, with the same spectrum as a black body of a temperature inversely proportional to its mass. This temperature is of the order of billionths of a kelvin for stellar black holes, making it essentially impossible to observe directly.",
 		"Objects whose gravitational fields are too strong for light to escape were first considered in the 18th century by John Michell and Pierre-Simon Laplace.In 1916, Karl Schwarzschild found the first modern solution of general relativity that would characterize a black hole. David Finkelstein, in 1958, first published the interpretation of &quot;black hole&quot; as a region of space from which nothing can escape. Black holes were long considered a mathematical curiosity; it was not until the 1960s that theoretical work showed they were a generic prediction of general relativity. The discovery of neutron stars by Jocelyn Bell Burnell in 1967 sparked interest in gravitationally collapsed compact objects as a possible astrophysical reality. The first black hole known was Cygnus X-1, identified by several researchers independently in 1971.",
 		"Black holes of stellar mass form when massive stars collapse at the end of their life cycle. After a black hole has formed, it can grow by absorbing mass from its surroundings. Supermassive black holes of millions of solar masses may form by absorbing other stars and merging with other black holes. There is consensus that supermassive black holes exist in the centers of most galaxies.",
@@ -290,12 +308,30 @@ var hobby_cards_db = [
 	[
 		"Apollo 11",
 		"Apollo11.jpg",
-		[320, 477],
+		[640, 482, -5],
 		"Apollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon. Commander Neil Armstrong and Lunar Module Pilot Buzz Aldrin landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC, and Armstrong became the first person to step onto the Moon's surface six hours and 39 minutes later, on July 21 at 02:56 UTC. Aldrin joined him 19 minutes later, and they spent about two and a quarter hour together exploring the site they had named Tranquility Base upon landing. Armstrong and Aldrin collected 47.5 pounds (21.5 kg) of lunar material to bring back to Earth as pilot Michael Collins flew the Command Module Columbia in lunar orbit, and were on the Moon's surface for 21 hours, 36 minutes before lifting off to rejoin Columbia.",
 		"Apollo 11 was launched by a Saturn V rocket from Kennedy Space Center on Merritt Island, Florida, on July 16 at 13:32 UTC, and it was the fifth crewed mission of NASA's Apollo program. The Apollo spacecraft had three parts: a command module (CM) with a cabin for the three astronauts, the only part that returned to Earth; a service module (SM), which supported the command module with propulsion, electrical power, oxygen, and water; and a lunar module (LM) that had two stages—a descent stage for landing on the Moon and an ascent stage to place the astronauts back into lunar orbit.",
 		"After being sent to the Moon by the Saturn V's third stage, the astronauts separated the spacecraft from it and traveled for three days until they entered lunar orbit. Armstrong and Aldrin then moved into Eagle and landed in the Sea of Tranquility on July 20. The astronauts used Eagle's ascent stage to lift off from the lunar surface and rejoin Collins in the command module. They jettisoned Eagle before they performed the maneuvers that propelled Columbia out of the last of its 30 lunar orbits onto a trajectory back to Earth. They returned to Earth and splashed down in the Pacific Ocean on July 24 after more than eight days in space.",
 		"Armstrong's first step onto the lunar surface was broadcast on live TV to a worldwide audience. He described the event as &quot;one small step for [a] man, one giant leap for mankind.&quot; Apollo 11 effectively proved U.S. victory in the Space Race to demonstrate spaceflight superiority, by fulfilling a national goal proposed in 1961 by President John F. Kennedy, &quot;before this decade is out, of landing a man on the Moon and returning him safely to the Earth.&quot;",
 		"Source: https://en.wikipedia.org/wiki/Apollo_11"
+	],
+	[
+		"Home Sweet Home",
+		"HomeSweetHome.jpg",
+		[640, 528],
+		"Earth is the third planet from the Sun and the only astronomical object known to harbor life. This is enabled by Earth being a water world, the only one in the Solar System sustaining liquid surface water. Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. The remaining 29.2% of Earth's crust is land, most of which is in the form of continental landmasses within one hemisphere, Earth's land hemisphere. Most of Earth's land is somewhat humid and covered by vegetation, while large sheets of ice at Earth's polar deserts retain more water than Earth's groundwater, lakes, rivers and atmospheric water combined. Earth's crust consists of slowly moving tectonic plates, which interact to produce mountain ranges, volcanoes, and earthquakes. Earth has a liquid outer core that generates a magnetosphere capable of deflecting most of the destructive solar winds and cosmic radiation.",
+		"Earth has a dynamic atmosphere, which sustains Earth's surface conditions and protects it from most meteoroids and UV-light at entry. It has a composition of primarily nitrogen and oxygen. Water vapor is widely present in the atmosphere, forming clouds that cover most of the planet. The water vapor acts as a greenhouse gas and, together with other greenhouse gases in the atmosphere, particularly carbon dioxide (CO2), creates the conditions for both liquid surface water and water vapor to persist via the capturing of energy from the Sun's light. This process maintains the current average surface temperature of 14.76 °C, at which water is liquid under atmospheric pressure. Differences in the amount of captured energy between geographic regions (as with the equatorial region receiving more sunlight than the polar regions) drive atmospheric and ocean currents, producing a global climate system with different climate regions, and a range of weather phenomena such as precipitation, allowing components such as nitrogen to cycle.",
+		"Earth, like most other bodies in the Solar System, formed 4.5 billion years ago from gas in the early Solar System. During the first billion years of Earth's history, the ocean formed and then life developed within it. Life spread globally and has been altering Earth's atmosphere and surface, leading to the Great Oxidation Event two billion years ago. Humans emerged 300,000 years ago in Africa and have spread across every continent on Earth except for Antarctica. Humans depend on Earth's biosphere and natural resources for their survival but have increasingly impacted the planet's environment. Humanity's current impact on Earth's climate and biosphere is unsustainable, threatening the livelihood of humans and many other forms of life, and causing widespread extinctions.",
+		"Source: https://en.wikipedia.org/wiki/Earth"
+	],
+	[
+		"The Sun",
+		"TheSun.jpg",
+		[640, 499],
+		"The Sun is the star at the center of the Solar System. It is a massive, hot ball of plasma, inflated and heated by energy produced by nuclear fusion reactions at its core. Part of this internal energy is emitted from its surface as light, ultraviolet, and infrared radiation, providing most of the energy for life on Earth.",
+		"The enormous effect of the Sun on Earth has been recognized since prehistoric times; the Sun was thought of by some cultures as a deity. The synodic rotation of Earth and its orbit around the Sun are the basis of some solar calendars. The predominant calendar in use today is the Gregorian calendar, which is based upon the standard 16th-century interpretation of the Sun's observed movement as actual movement.",
+		"One astronomical unit (about 150,000,000 km; 93,000,000 mi) is defined as the mean distance of the Sun's center to Earth's center, though the distance varies (by about +/- 2.5 million km or 1.55 million miles) as Earth moves from perihelion on about 3 January to aphelion on about 4 July. The distances can vary between 147,098,074 km (perihelion) and 152,097,701 km (aphelion), and extreme values can range from 147,083,346 km to 152,112,126 km. At its average distance, light travels from the Sun's horizon to Earth's horizon in about 8 minutes and 20 seconds, while light from the closest points of the Sun and Earth takes about two seconds less. The energy of this sunlight supports almost all life[c] on Earth by photosynthesis, and drives Earth's climate and weather.",
+		"Source: https://en.wikipedia.org/wiki/Sun"
 	],
 	["@End"]
 ];
