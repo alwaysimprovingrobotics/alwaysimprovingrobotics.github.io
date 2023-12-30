@@ -33,7 +33,7 @@ function print_header(n) {
 		['awards',		'Awards',		'awards'], 
 		['accomp',		'Accomplished',	'accomp'], 
 		['hobbycard',	'Hobby Cards',	'hobbycards'], 
-		['innovation',	'Innovation',	'innovation']
+		['innovation',	'Innovation Project',	'innovation']
 	];
 
 	var str = "";
