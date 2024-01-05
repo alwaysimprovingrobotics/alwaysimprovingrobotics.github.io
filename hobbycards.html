@@ -140,6 +140,8 @@
 
 					if(hobby_cards_db[i][2].length >= 3)
 						x += hobby_cards_db[i][2][2];
+					if(x < 0)
+						x = 0;
 
 					if(w >= h)
 						y = 0;
@@ -148,6 +150,8 @@
 
 					if(hobby_cards_db[i][2].length >= 4)
 						y += hobby_cards_db[i][2][3];
+					if(y < 0)
+						y = 0;
 
 					str += '<div class="thumbnail" style="margin-right:' + (isPortrait? 4 : 12) + 'px;">';
 					str += '<div style="width:120px;height:120px;background:url(\'hobbycards/' + hobby_cards_db[i][1] + '\') no-repeat -' +
