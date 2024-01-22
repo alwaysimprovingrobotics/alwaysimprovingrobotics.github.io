@@ -29,11 +29,12 @@ function print_header(n) {
 	}
 
 	var items = [
-		['about',		'About Us',		'index'], 
-		['awards',		'Awards',		'awards'],
-		['hobbycard',	'Hobby Cards',	'hobbycards'], 
-		['robotdesign',	'Robot Design',	'robotdesign'], 
-		['innovation',	'Innovation Project',	'innovation']
+		['about',		'About Us',		'index.html'],
+		['awards',		'Awards',		'awards.html'],
+		['hobbycard',	'Hobby Cards',	'hobbycards.html'],
+		['robotdesign',	'Robot Design',	'robotdesign.html'],
+		['innovation',	'Innovation Project',	'innovation.html'],
+		['feedback',	'Feedback',		'feedback.html']
 	];
 
 	var str = "";
@@ -41,7 +42,7 @@ function print_header(n) {
 		if(n == items[i][0])
 			str += '<span class="menu_selected"> ' + items[i][1] + ' </span> | ';
 		else
-			str += '<span class="menu"><a href="' + items[i][2] + '.html"> ' + items[i][1] + ' </a></span> | ';
+			str += '<span class="menu"><a href="' + items[i][2] + '"> ' + items[i][1] + ' </a></span> | ';
 	}
 
 	$("navi").innerHTML = str;
