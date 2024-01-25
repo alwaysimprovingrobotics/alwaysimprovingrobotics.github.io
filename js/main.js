@@ -29,9 +29,9 @@ function print_header(n) {
 	}
 
 	var items = [
-		['about',		'About Us',		'index.html'],
+		['about',		'About Us',		'about.html'],
 		['awards',		'Awards',		'awards.html'],
-		['hobbycard',	'Hobby Cards',	'hobbycards.html'],
+		['hobbycard',	'Hobby Cards',	'index.html'],
 		['robotdesign',	'Robot Design',	'robotdesign.html'],
 		['innovation',	'Innovation Project',	'innovation.html'],
 		['feedback',	'Feedback',		'feedback.html']

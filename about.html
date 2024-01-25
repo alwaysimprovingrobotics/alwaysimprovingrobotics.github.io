@@ -1,0 +1,154 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="width=device-width; initial-scale=1; minimum-scale=1, maximum-scale=1; user-scalable=0;"/>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<meta name="description" content="Team Always Improving's website">
+	<meta name="keywords" content="Always Improving Robotics #51794">
+	<meta name="author" content="Team AI">
+	<meta name="google-site-verification" content="Oej_-PkMGEX-Pg-KwKpaM51ZQCkr53xaY0R-jqSiIaA" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icon57.png">
+	<link rel="shortcut icon" href="img/icon57.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<title>Always Improving</title>
+	<style>
+        .intro_box {
+            border-top: dashed 1px #039aff;
+            margin-bottom: 12px;
+        }
+
+        .intro_left, .intro_right {
+            max-width: 500px;
+            min-height: 128px;
+            padding: 8px;
+        }
+
+        .intro_right {
+            margin: 0 0 0 auto;
+        }
+
+        .intro_box img {
+            width: 128px;
+            height: 128px;
+            border-radius: 64px;
+            margin-right: 16px;
+            background: #333;
+            float: left;
+			box-shadow: 2px 2px 5px #888;
+        }
+
+        .intro_right img {
+            float: right;
+        }
+
+		#team a.link, #team a:visited {
+			padding:0;
+			color:#0000ff;
+		}
+	</style>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="navi"></div>
+
+	<div id="frame">
+		<div id="team" class="box">
+			<div class="title">About Our Team!</div>
+			We are team A.I. - Always Improving. We are a First Lego League robotic team of seven youth ranging from ten to twelve year olds. This is our second year participating in First Lego League Challenge.
+			<div style="text-align: center;margin-top: 20px;">
+				<img id="slogan" src="img/slogan.png" style="width:440px;height:40px;">
+				<br><br>
+				<img src="img/logo2.png" width="256" height="256" style="background: #000;border-radius: 24px;box-shadow: 2px 2px 6px #888;margin-bottom: 16px;">
+				<div style="font-weight: bold;margin: 24px 0 6px 0;">Contact us:</div>
+				<div style="font-size: 15px;">
+					<img src="img/email.png" width="32" height="32" style="vertical-align:middle;margin-right: 4px;"><a href="mailto:always-improving@outlook.com">Always-Improving@outlook.com</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="members" class="box">
+			<div class="title">A.I. Members</div>
+
+			<div class="intro_box" style="border: none;">
+				<div class="intro_left">
+					<img src="img/robot_alvin.png">
+					Hi, my name is <b>Alvin</b>. I have 2 years of experience in FLL. I like to eat dumplings and noodles, and I like to practice the piano and clarinet and play video games. I want to be a musician when I grow up.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_right">
+					<img src="img/robot_chloe.png">
+					My name is <b>Chloe</b>, and I'm in seventh grade. This is my first year competing in FLL. I like to design things such as the team website, team t-shirt, team logo, banner and posters. I like to dance, snowboard, play volleyball, graphic design, and code.
+				</div>
+			</div>
+			
+			<div class="intro_box">
+				<div class="intro_left">
+					<img src="img/robot_ivan.png">
+					Hello, my name is <b>Ivan</b>. I have 2 years of experience in FLL. I like to play basketball, chess, and play video games, and I want to be an engineer when I grow up.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_right">
+					<img src="img/robot_katya.png">
+					Hi, my name is <b>Katya</b>, and I'm in fifth grade. This is my first year competing in FLL. I like to play lacrosse, play soccer, swim, and play tennis.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_left">
+					<img src="img/robot_kevinf.png">
+					Hello, my name is <b>Kevin F</b>. I have 1 year of experience in FLL. I like to play basketball, tennis, chess, video games, etc. I want to be a mechanical engineer when I grow up.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_right">
+					<img src="img/robot_kevinj.png">
+					Hi, I'm <b>Kevin J</b>. This is my second year competing in FLLC. I have learned many things like how to code and how to build attachments. I like to do many things including swimming and watching TV.
+				</div>
+			</div>
+
+			<div class="intro_box">
+				<div class="intro_left">
+					<img src="img/robot_mason.png">
+					Hi, my name is <b>Mason</b> and I am in 6th grade. I have about 1.5 years of experience in FLL. I like to eat ramen and I want to be a NASA engineer when I grow up.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script lang="javascript">
+		function adj_layout() {
+			var w = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+			var h = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+			if(portrait()) {
+				$("team").style.position = "relative";
+				$("members").style.position = "relative";
+				$("members").style.marginTop = "16px";
+				$("slogan").style.width = "264px";
+				$("slogan").style.height = "24px";
+			}
+			else {
+				$("team").style.position = "absolute";
+				$("team").style.top = "16px";
+				$("team").style.bottom = "16px";
+				$("team").style.left = "16px";
+				$("team").style.right = "calc(50% + 8px)";
+
+				$("members").style.position = "absolute";
+				$("members").style.top = "16px";
+				$("members").style.bottom = "16px";
+				$("members").style.left = "calc(50% + 8px)";
+				$("members").style.right = "16px";
+			}
+		}
+
+		print_header("about");
+		adj_layout();
+	</script>
+</body>
+</html>
