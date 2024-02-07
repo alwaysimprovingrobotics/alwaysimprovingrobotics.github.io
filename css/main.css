@@ -33,6 +33,7 @@ table, td {
 
 #navi {
 	position:fixed;
+	color: #eef;
 }
 
 #navi .menu_selected {
