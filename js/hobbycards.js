@@ -229,6 +229,41 @@ var hobby_cards_db = [
 		"Appreciation of Schubert's music while he was alive was limited to a relatively small circle of admirers in Vienna, but interest in his work increased greatly in the decades following his death. Felix Mendelssohn, Robert Schumann, Franz Liszt, Johannes Brahms and other 19th-century composers discovered and championed his works. Today, Schubert is ranked among the greatest composers in the history of Western classical music and his work continues to be admired and widely performed.",
 		"Source: https://en.wikipedia.org/wiki/Franz_Schubert"
 	],
+	[
+		"Pyotr Ilyich Tchaikovsky",
+		"Tchaikovsky.jpg",
+		[640, 780, 0, -10],
+		"Pyotr Ilyich Tchaikovsky (/tʃaɪˈkɒfski/ chy-KOF-skee; 7 May 1840 – 6 November 1893) was a Russian composer of the Romantic period. He was the first Russian composer whose music would make a lasting impression internationally. Tchaikovsky wrote some of the most popular concert and theatrical music in the current classical repertoire, including the ballets Swan Lake and The Nutcracker, the 1812 Overture, his First Piano Concerto, Violin Concerto, the Romeo and Juliet Overture-Fantasy, several symphonies, and the opera Eugene Onegin.",
+		"Although musically precocious, Tchaikovsky was educated for a career as a civil servant as there was little opportunity for a musical career in Russia at the time and no system of public music education. When an opportunity for such an education arose, he entered the nascent Saint Petersburg Conservatory, from which he graduated in 1865. The formal Western-oriented teaching that Tchaikovsky received there set him apart from composers of the contemporary nationalist movement embodied by the Russian composers of The Five with whom his professional relationship was mixed.",
+		"Tchaikovsky's training set him on a path to reconcile what he had learned with the native musical practices to which he had been exposed from childhood. From that reconciliation, he forged a personal but unmistakably Russian style. The principles that governed melody, harmony, and other fundamentals of Russian music diverged from those that governed Western European music, which seemed to defeat the potential for using Russian music in large-scale Western composition or for forming a composite style, and it caused personal antipathies that dented Tchaikovsky's self-confidence. Russian culture exhibited a split personality, with its native and adopted elements having drifted apart increasingly since the time of Peter the Great. That resulted in uncertainty among the intelligentsia about the country's national identity, an ambiguity mirrored in Tchaikovsky's career.",
+		"Source: https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
+	],
+	[
+		"Johannes Brahms",
+		"Brahms.jpg",
+		[640, 800, 0, -10],
+		"Johannes Brahms (German: [joˈhanəs ˈbʁaːms]; 7 May 1833 – 3 April 1897) was a German composer, pianist, and conductor of the mid-Romantic period. Born in Hamburg into a Lutheran family, he spent much of his professional life in Vienna. He is sometimes grouped with Johann Sebastian Bach and Ludwig van Beethoven as one of the &quot;Three Bs&quot; of music, a comment originally made by the nineteenth-century conductor Hans von Bülow.",
+		"Brahms composed for symphony orchestra, chamber ensembles, piano, organ, voice, and chorus. A virtuoso pianist, he premiered many of his own works. He worked with leading performers of his time, including the pianist Clara Schumann and the violinist Joseph Joachim (the three were close friends). Many of his works have become staples of the modern concert repertoire.",
+		"Brahms has been considered both a traditionalist and an innovator, by his contemporaries and by later writers. His music is rooted in the structures and compositional techniques of the Classical masters. Embedded within those structures are deeply Romantic motifs. While some contemporaries found his music to be overly academic, his contribution and craftsmanship were admired by subsequent figures as diverse as Arnold Schoenberg and Edward Elgar. The detailed construction of Brahms's works was a starting point and an inspiration for a generation of composers.",
+		"Source: https://en.wikipedia.org/wiki/Johannes_Brahms"
+	],
+	[
+		"Felix Mendelssohn",
+		"Mendelssohn.jpg",
+		[640, 800, 0, -10],
+		"Jakob Ludwig Felix Mendelssohn Bartholdy (3 February 1809 – 4 November 1847), widely known as Felix Mendelssohn, was a German composer, pianist, organist and conductor of the early Romantic period. Mendelssohn's compositions include symphonies, concertos, piano music, organ music and chamber music. His best-known works include the overture and incidental music for A Midsummer Night's Dream (which includes his &quot;Wedding March&quot;), the Italian Symphony, the Scottish Symphony, the oratorio St. Paul, the oratorio Elijah, the overture The Hebrides, the mature Violin Concerto, the String Octet, and the melody used in the Christmas carol &quot;Hark! The Herald Angels Sing&quot;. Mendelssohn's Songs Without Words are his most famous solo piano compositions.",
+		"Mendelssohn's grandfather was the renowned Jewish philosopher Moses Mendelssohn, but Felix was initially raised without religion until he was baptised aged seven into the Reformed Christian church. He was recognised early as a musical prodigy, but his parents were cautious and did not seek to capitalise on his talent. His sister Fanny Mendelssohn received a similar musical education and was a talented composer and pianist in her own right; some of her early songs were published under her brother's name and her Easter Sonata was for a time mistakenly attributed to him after being lost and rediscovered in the 1970s.",
+		"Mendelssohn enjoyed early success in Germany, and revived interest in the music of Johann Sebastian Bach, notably with his performance of the St Matthew Passion in 1829. He became well received in his travels throughout Europe as a composer, conductor and soloist; his ten visits to Britain – during which many of his major works were premiered – form an important part of his adult career. His essentially conservative musical tastes set him apart from more adventurous musical contemporaries such as Franz Liszt, Richard Wagner, Charles-Valentin Alkan and Hector Berlioz. The Leipzig Conservatory,[n 3] which he founded, became a bastion of this anti-radical outlook. After a long period of relative denigration due to changing musical tastes and antisemitism in the late 19th and early 20th centuries, his creative originality has been re-evaluated. He is now among the most popular composers of the Romantic era.",
+		"Source: https://en.wikipedia.org/wiki/Felix_Mendelssohn"
+	],
+	[
+		"Johann Strauss II",
+		"Strauss.jpg",
+		[640, 800, 0, -10],
+		"Johann Baptist Strauss II (German: [ˈjoːhan bapˈtɪst ˈʃtʁaʊs]; 25 October 1825 – 3 June 1899), also known as Johann Strauss Jr., the Younger or the Son (German: Johann Strauß Sohn), was an Austrian composer of light music, particularly dance music and operettas as well as a violinist. He composed over 500 waltzes, polkas, quadrilles, and other types of dance music, as well as several operettas and a ballet. In his lifetime, he was known as &quot;The Waltz King&quot;, and was largely responsible for the popularity of the waltz in Vienna during the 19th century. Some of Johann Strauss's most famous works include &quot;The Blue Danube&quot;, &quot;Kaiser-Walzer&quot; (Emperor Waltz), &quot;Tales from the Vienna Woods&quot;, &quot;Frühlingsstimmen&quot;, and the &quot;Tritsch-Tratsch-Polka&quot;. Among his operettas, Die Fledermaus and Der Zigeunerbaron are the best known.",
+		"Strauss was the son of Johann Strauss I and his first wife Maria Anna Streim. Two younger brothers, Josef and Eduard Strauss, also became composers of light music, although they were never as well known as their brother.",
+		"Source: https://en.wikipedia.org/wiki/Johann_Strauss_II"
+	],
 	["@Craft"],
 	[
 		"Make Pan Flute by Straws",
