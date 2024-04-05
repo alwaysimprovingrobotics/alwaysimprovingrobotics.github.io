@@ -1,0 +1,132 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Helvetica,arial,sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0;
+	padding: 0;
+	color: #484848;
+	overflow: hidden;
+	background-color: #f0f0f0;
+	background-image: linear-gradient(rgba(90,188,255,0.45) 6px, transparent 3px),
+					  linear-gradient(90deg, rgba(90,188,255,0.45) 6px, transparent 3px);
+	background-size: 9px 9px;
+}
+
+table, td {
+	border-collapse: collapse;
+}
+
+#header {
+	position: fixed;
+	top: 16px;
+	left: 16px;
+	right: 16px;
+	background:#000;
+	padding: 16px;
+	border-radius: 10px;
+}
+
+#navi {
+	position:fixed;
+	color: #eef;
+}
+
+#navi .menu_selected {
+	background: #ccf;
+	color:#000;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#navi .menu {
+	background: #000;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 14px;
+}
+
+#navi .menu a:link, #navi .menu a:visited {
+	color:#c0c0f0;
+	text-decoration: none;
+}
+
+#navi .menu a:hover {
+	background: #039aff;
+	color:#fff;
+}
+
+#frame {
+	position: fixed;
+	overflow: auto;
+	top: 116px;
+	bottom: 16px;
+	left: 16px;
+	right: 16px;
+	padding: 12px;
+	border-radius: 10px;
+	border: solid #fff 10px;
+	background-color: #f0f0f0;
+	background-image: repeating-linear-gradient(45deg, rgba(90,188,255,0.45), rgba(90,188,255,0.45) 14px, transparent 14px, transparent 20px),
+					  repeating-linear-gradient(135deg, rgba(90,188,255,0.45), rgba(90,188,255,0.45) 14px, transparent 14px, transparent 20px);
+}
+
+.box {
+	background-color: #fff;
+	border: solid #c0c0c0 1px;
+	overflow: auto;
+	padding: 14px;
+	border-radius: 6px;
+}
+
+.title {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 28px;
+	color:#fff;
+	text-shadow:2px 2px 6px rgba(0,0,0,0.5);
+	background: #039aff;
+	padding: 16px 8px;
+	border-radius: 6px;
+	margin-bottom: 12px;
+}
+
+.title2 {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 24px;
+	color: #039aff;
+	margin: 8px;
+}
+
+p {
+	padding: 4px;
+}
+
+button {
+	height: 28px;
+	line-height: 28px;
+	font-size: 18px;
+	background: #35bbfc;
+	color: #fff;
+	border: none;
+	border-radius: 14px;
+	padding: 0 10px;
+	text-shadow: -1px -1px -2px #000;
+	box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+
+hr {
+	height: 1px;
+	background-color: #039aff;
+	border: none;
+	margin-bottom: 16px;
+}

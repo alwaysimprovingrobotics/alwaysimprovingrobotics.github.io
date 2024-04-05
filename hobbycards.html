@@ -1,0 +1,214 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="width=device-width; initial-scale=1; minimum-scale=1, maximum-scale=1; user-scalable=0;"/>
+	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+	<meta name="description" content="Team Always Improving's website">
+	<meta name="keywords" content="Always Improving Robotics #51794 Hobby Cards">
+	<meta name="author" content="Team AI">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icon114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icon57.png">
+	<link rel="shortcut icon" href="img/icon57.png">
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<title>Always Improving - Hobby Cards</title>
+	<style>
+		.thumbnail {
+			position: relative;
+			display: inline-block;
+			width: 120px;
+			height: 152px;
+			border: solid #fff 4px;
+			box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+			margin: 0 0px 6px 0;
+			cursor: pointer;
+		}
+
+		.thumbnail .label {
+			position: absolute;
+			text-align: center;
+			left: 0;
+			right: 0;
+			top: 123px;
+			font-size: 14px;
+			line-height: 14px;
+			color: #446;
+		}
+
+		#info {
+			position: fixed;
+			z-index: 9999;
+			border: solid #35bbfc 6px;
+			border-radius: 5px;
+			top: 4px;
+			bottom: 4px;
+			background: #fff;
+			display: none;
+			padding: 0;
+		}
+		#info_title {
+			position: absolute;
+			background: #35bbfc;
+			color: #fff;
+			left: 0;
+			right: 0;
+			height: 24px;
+			line-height: 20px;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			text-shadow: 2px 2px 4px #000;
+		}
+		#info_close {
+			position: absolute;
+			top: 1px;
+			right: 3px;
+			width: 24px;
+			font-size: 14px;
+			line-height: 18px;
+			background: #A82020;
+			color: #fff;
+			text-align: center;
+			cursor: pointer;
+		}
+		#info_content {
+			position: absolute;
+			top: 24px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			overflow: auto;
+			padding:8px;
+		}
+		#info_content img {
+			box-shadow: 4px 4px 8px #888;
+			margin: 8px 16px 16px 8px;
+			float: left;
+		}
+
+		h5 {
+			display: inline-block;
+			font-weight: bold;
+			width: 100px;
+			margin: 0;
+			padding: 0;
+			font-size: 16px;
+			line-height: 18px;
+		}
+
+		a.link, a:visited {padding:0;color:#0000ff;}
+	</style>
+	<script src="js/main.js"></script>
+	<script src="js/hobbycards.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div id="navi"></div>
+	<div id="frame"></div>
+
+	<div id="info">
+        <div id="info_title"></div>
+        <div id="info_close" onclick="hide_info()">&#10006;</div>
+        <div id="info_content"></div>
+    </div>
+
+	<script lang="javascript">
+		var isPortrait = portrait();
+		function show_gallery() {
+			var str = '';
+			for(var i=0; i<hobby_cards_db.length-1; i++) {
+				if(hobby_cards_db[i][0].substr(0, 1) == '@') {
+					if(str != '')
+						str += '</div>';
+					str += '<div class="box" style="margin-bottom: 12px;">';
+					str += '<div class="title">' + hobby_cards_db[i][0].substr(1);
+					str += '<button style="position:absolute;right:36px;" onclick="window.open(\'http://alwaysimproving.byethost7.com/hc_editor/index.html?' + hobby_cards_db[i][0].substr(1) + '\')">Create</button>' + '</div>';
+				}
+				else {
+					var w = hobby_cards_db[i][2][0];
+					var h = hobby_cards_db[i][2][1];
+					var size;
+					if(hobby_cards_db[i][2].length >= 5)
+						size = parseInt(120 * w /  hobby_cards_db[i][2][4]);
+					else if(w > h)
+						size = parseInt(120 * w / h);
+					else
+						size = 120;
+
+					var x, y;
+					if(w <= h)
+						x = 0;
+					else
+						x = parseInt((w / h * 120 - 120) / 2);
+
+					if(hobby_cards_db[i][2].length >= 3)
+						x += hobby_cards_db[i][2][2];
+					if(x < 0)
+						x = 0;
+
+					if(w >= h)
+						y = 0;
+					else
+						y = parseInt((h / w * 120 - 120) / 2);
+
+					if(hobby_cards_db[i][2].length >= 4)
+						y += hobby_cards_db[i][2][3];
+					if(y < 0)
+						y = 0;
+
+					str += '<div class="thumbnail" style="margin-right:' + (isPortrait? 4 : 12) + 'px;">';
+					str += '<div style="width:120px;height:120px;background:url(\'hobbycards/' + hobby_cards_db[i][1] + '\') no-repeat -' +
+					x + 'px -' + y + 'px;background-size:' + size + 'px;" \
+					onclick="show_info(' + i + ')"></div>';
+					str += '<div class="label">' + hobby_cards_db[i][0] + '</div>';
+					str += '</div> ';
+				}
+			}
+			str += '</div>';
+			$('frame').innerHTML = str;
+		}
+
+        function show_info(i) {
+            $("info").style.display = "block";
+			if(isPortrait) {
+				$("info").style.left = "10px";
+	            $("info").style.right = "10px";
+			}
+			else {
+				$("info").style.left = "100px";
+	            $("info").style.right = "100px";
+			}
+
+            $("info_title").innerHTML = hobby_cards_db[i][0];
+
+			var w = hobby_cards_db[i][2][0];
+			var h = hobby_cards_db[i][2][1];
+			if(isPortrait) {
+				w = parseInt(w / 2);
+				h = parseInt(h / 2);
+			}
+
+			var str = "<img src='hobbycards/" + hobby_cards_db[i][1] + "' width=" + w + " height=" + h + ">";
+
+			var regex = /(\bhttps?:\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;()]*[-A-Z0-9+&@#\/%=~_|()])/gim;
+			for(var j=3; j<hobby_cards_db[i].length; j++) {
+				var txt = hobby_cards_db[i][j];
+				txt = txt.replace(regex, '<a href="$1" target="_blank">$1</a>');
+				if(hobby_cards_db[i][j].substr(0, 4) == "<h5>" || hobby_cards_db[i][j].substr(0, 4) == "<li>")
+		            str += txt + "<br>";
+				else
+		            str += "<p>" + txt + "</p>";
+			}
+
+            str += "<hr>";
+            str += "<div style='text-align:center;'><button onclick='hide_info()'>Close</button></div>";
+            $("info_content").innerHTML = str;
+        }
+
+        function hide_info() {
+            $("info").style.display = "none";
+        }
+
+		print_header("hobbycard");
+		show_gallery();
+	</script>
+</body>
+</html>
