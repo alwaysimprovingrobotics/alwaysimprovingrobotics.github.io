@@ -29,21 +29,40 @@ function print_header(n) {
 	}
 
 	var items = [
-		['home',		'Home',			'index.html'],
-		['hobbycard',	'Hobby Cards',	'hobbycards.html'],
-		['awards',		'Awards',		'awards.html'],
-		['robotdesign',	'Robot Design',	'robotdesign.html'],
-		['innovation',	'Innovation Project',	'innovation.html'],
-		['feedback',	'Feedback',		'feedback.html'],
-		['about',		'About Us',		'about.html']
+		['home',		'Home',					0, 'index.html'],
+		['hobbycard',	'Hobby Cards',			1, 'hobbycards/index.html'],
+		['awards',		'Awards',				0, 'awards.html'],
+		['robotdesign',	'Robot Design',			0, 'robotdesign.html'],
+		['innovation',	'Innovation Project',	0, 'innovation.html'],
+		['feedback',	'Feedback',				0, 'feedback.html'],
+		['about',		'About Us',				0, 'about.html']
+	];
+
+	const urls = [
+		//local
+		[
+			"http://localhost/alwaysimprovingrobotics.github.io/",
+			"http://localhost/byethost/"
+		],
+		[
+			"https://alwaysimprovingrobotics.github.io/",
+			"http://alwaysimproving.byethost7.com/"
+		]
 	];
 
 	var str = "";
 	for(var i=0; i<items.length; i++) {
-		if(n == items[i][0])
-			str += '<span class="menu_selected">&nbsp;' + items[i][1] + '&nbsp;</span>|';
-		else
-			str += '<span class="menu"><a href="' + items[i][2] + '">&nbsp;' + items[i][1] + '&nbsp;</a></span>|';
+		if(n == items[i][0]) {
+			str += '<span class="menu_selected">&nbsp;' + items[i][1] + '&nbsp;</span> | ';
+		}
+		else {
+			if(window.location.href.indexOf("localhost") != -1) {
+				str += '<span class="menu"><a href="' + urls[0][items[i][2]] + items[i][3] + '">&nbsp;' + items[i][1] + '&nbsp;</a></span> | ';
+			}
+			else {
+				str += '<span class="menu"><a href="' + urls[1][items[i][2]] + items[i][3] + '">&nbsp;' + items[i][1] + '&nbsp;</a></span> | ';
+			}
+		}
 	}
 
 	$("navi").innerHTML = str;
