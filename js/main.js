@@ -30,7 +30,7 @@ function print_header(n) {
 
 	var items = [
 		['home',		'Home',					0, 'index.html'],
-		['hobbycard',	'Hobby Cards',			1, 'hobbycards/index.html'],
+		['hobbycard',	'Hobby Cards',			1, 'hobbycards'],
 		['awards',		'Awards',				0, 'awards.html'],
 		['robotdesign',	'Robot Design',			0, 'robotdesign.html'],
 		['innovation',	'Innovation Project',	0, 'innovation.html'],
