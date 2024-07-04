@@ -46,7 +46,7 @@ function print_header(n) {
 		],
 		[
 			"https://alwaysimprovingrobotics.github.io/",
-			"http://alwaysimproving.byethost7.com/"
+			"http://aim4u.byethost7.com/"
 		]
 	];
 
