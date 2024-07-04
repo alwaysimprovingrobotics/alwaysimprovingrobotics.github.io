@@ -30,7 +30,7 @@ function print_header(n) {
 
 	var items = [
 		['home',		'Home',					0, 'index.html'],
-		['hobbycard',	'Hobby Cards',			1, 'hobbycards'],
+		['hobbycard',	'Hobby Cards',			1, 'index.php'],
 		['awards',		'Awards',				0, 'awards.html'],
 		['robotdesign',	'Robot Design',			0, 'robotdesign.html'],
 		['innovation',	'Innovation Project',	0, 'innovation.html'],
@@ -46,7 +46,7 @@ function print_header(n) {
 		],
 		[
 			"https://alwaysimprovingrobotics.github.io/",
-			"http://aim4u.byethost7.com/"
+			"http://aim4u.byethost7.com/cards/"
 		]
 	];
 
